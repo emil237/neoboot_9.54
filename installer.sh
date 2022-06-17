@@ -1,7 +1,8 @@
 #!/bin/bash
 # ###############################################
 # SCRIPT : DOWNLOAD AND INSTALL NEOBOOT
-# ############################################### ###########################################
+#
+##command=wget https://raw.githubusercontent.com/emil237/neoboot_9.54/main/installer.sh -O - | /bin/sh ############################################### ###########################################
 versions="17.05.2022"
 NEOBOOT='9.54'
 ###########################################
@@ -95,7 +96,7 @@ clear
 sleep 5
 cd /tmp
 set -e 
-wget "https://raw.githubusercontent.com/emil237/plugins/main/NEOBOOT-PYTHON32.tar.gz"
+wget "https://raw.githubusercontent.com/emil237/neoboot_9.54/main/NEOBOOT-PYTHON32.tar.gz"
 wait
 tar -xzf NEOBOOT-PYTHON32.tar.gz  -C /
 wait
@@ -126,6 +127,8 @@ init 4
 sleep 2
 init 3
 exit 0
+
+
 
 
 
